@@ -5,10 +5,11 @@ interface LotteryResultCardProps {
   name: string;
   mobileno: string;
   ticket: string;
+  winPrice: string;
   date: string;
 }
 
-const LotteryResultCard: React.FC<LotteryResultCardProps> = ({ name, mobileno, ticket, date }) => {
+const LotteryResultCard: React.FC<LotteryResultCardProps> = ({ name, winPrice, ticket, date }) => {
   let drawDate = new Date(date);
   let formattedDate = `${drawDate.getDate()}/${drawDate.getMonth() + 1}/${drawDate.getFullYear()}`;
   let capitalName = name.toUpperCase();
@@ -28,7 +29,7 @@ const LotteryResultCard: React.FC<LotteryResultCardProps> = ({ name, mobileno, t
         <h2 className={`my-2 text-yellow-400 text-4xl font-bold ${styles.blink}`}>{capitalName}
         </h2> {/* Apply the blink class here */}
         <p className="my-2 font-medium px-2">
-          You Have won the 4th Prize for <span className="underline">Rs. 8,00,000.00/-</span> 
+          You Have won the 4th Prize for <span className="underline">Rs. {winPrice}/-</span> 
         </p>
         <p className="my-2 font-semibold">Ticket no: {ticket}</p>
         <p className="my-2 text-sky-400 text-semibold">Draw Date: {formattedDate}</p>

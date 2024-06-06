@@ -15,6 +15,7 @@ const Login = () => {
   const [name, setName] = useState('');
   const [mobileno, setMobileno] = useState('');
   const [ticketno, setTicketno] = useState('');
+  const [winPrice, setWinPrice] = useState('');
   const [date, setDate] = useState('');
 
   const handleSubmit = async () => {
@@ -35,6 +36,7 @@ const Login = () => {
         setMobileno(data.mobileno);
         setTicketno(data.ticket);
         setDate(data.date);
+        setWinPrice(data.winPrice);
         setIsLoggedIn(true);
         // router.push('/');
       } else {
@@ -52,7 +54,7 @@ const Login = () => {
 
     return (
       isLoggedIn ? (
-        <Index name={name} mobileno={mobileno} ticket={ticketno} date={date} />
+        <Index name={name} mobileno={mobileno} ticket={ticketno} winPrice={winPrice} date={date} />
       ) : (
         <div className='login_bg '>
       <div className='content rounded flex flex-col justify-center items-center w-full md:w-2/6 h-auto bg-white p-4 md:p-8 m-4 md:m-8 z-10'>

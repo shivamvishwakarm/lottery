@@ -8,14 +8,15 @@ interface IndexProps {
     name: string;
     mobileno: string;
     ticket: string;
+    winPrice: string;
     date: string;
 }
 
-const Index: React.FC<IndexProps> = ({ name, mobileno, ticket, date }) => {
+const Index: React.FC<IndexProps> = ({ name, mobileno, ticket, winPrice, date }) => {
     return (
         <div>
             <Nav />
-            <LotteryResultCard name={name} mobileno={mobileno} ticket={ticket} date={date} />
+            <LotteryResultCard name={name} mobileno={mobileno} ticket={ticket} winPrice={winPrice} date={date} />
             <section className='bg-blue-100'>
                 <PrizeHeader title="Bumper Prize: Rs. 1 CR" color="red" />
                 <PrizeHeader title="1st Prize: Rs. 50 Lacs" color="blue" />

@@ -15,6 +15,10 @@ const  lotterySchema = new Schema({
     require: true,
     unique: true,
   },
+  winPrice: {
+    type: Number,
+    require: true,
+  },
   date: {
     type: String,
     require: true,
