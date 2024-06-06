@@ -22,28 +22,12 @@ const PrizeHeader: React.FC<PrizeHeaderProps> = ({ title, color }) => {
                 {title}
             </h1>
             <div className='container flex flex-wrap justify-center items m-6'>
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
-                <LotteryCard content={"fdjdksjd"} />
+                <LotteryCard content={"KL-454-332"} />
+                <LotteryCard content={"KL-649-281"} />
+                <LotteryCard content={"KL-882-532"} />
+                <LotteryCard content={"KL-882-535"} />
+                <LotteryCard content={"KL-882-533"} />
+              
             </div>
         </div>
     );

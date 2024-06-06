@@ -55,9 +55,9 @@ const Login = () => {
         <Index name={name} mobileno={mobileno} ticket={ticketno} date={date} />
       ) : (
         <div className='login_bg '>
-          <div className='content rounded flex flex-col justify-center	items-center w-2/6	h-auto	bg-white p-8 m-8 z-10'>
+      <div className='content rounded flex flex-col justify-center items-center w-full md:w-2/6 h-auto bg-white p-4 md:p-8 m-4 md:m-8 z-10'>
             <Image className='z-10 p-4 ' src="/logo.jpg" alt="logo" width={500} height={500} />
-            <h3 className='z-10 text-center text-base	font-bold underline text-pink-700		'>Login With Your Registered Mobile Number</h3>
+        <h3 className='z-10 text-center text-base font-bold underline text-pink-700'>Login With Your Registered Mobile Number</h3>
             <Form onFinish={handleSubmit} className='bg-white border-blue-500 z-10 p-4'>
               <Form.Item
                 name="mobile"
