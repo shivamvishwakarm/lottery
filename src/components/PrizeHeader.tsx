@@ -4,6 +4,7 @@ import LotteryCard from './LotteryCard';
 interface PrizeHeaderProps {
     title: string;
     color: string;
+    ticket: string[];
 }
 
 const getColorClass = (color: string) => {
@@ -14,7 +15,7 @@ const getColorClass = (color: string) => {
   return 'bg-red-700'; // Default color
 };
 
-const PrizeHeader: React.FC<PrizeHeaderProps> = ({ title, color }) => {
+const PrizeHeader: React.FC<PrizeHeaderProps> = ({ title, color, ticket }) => {
     const colorClass = getColorClass(color);
     return (
         <div className='flex flex-col mx-8 justify-center items-center'>
@@ -22,11 +23,11 @@ const PrizeHeader: React.FC<PrizeHeaderProps> = ({ title, color }) => {
                 {title}
             </h1>
             <div className='container flex flex-wrap justify-center items m-6'>
-                <LotteryCard content={"KL-454-332"} />
-                <LotteryCard content={"KL-649-281"} />
-                <LotteryCard content={"KL-882-532"} />
-                <LotteryCard content={"KL-882-535"} />
-                <LotteryCard content={"KL-882-533"} />
+                {
+                    ticket.map((t: string, index: number) => {
+                        return <LotteryCard key={index} content={t} />;
+                    })
+                }
               
             </div>
         </div>
