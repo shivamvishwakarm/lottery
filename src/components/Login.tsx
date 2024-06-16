@@ -23,8 +23,7 @@ const Login = () => {
     try {
       const response = await axios.get('/api/getDataByNumber', {
         params: {
-          mobile,
-          _: new Date().getTime(), // add a timestamp as a query parameter
+          mobile
         },
       });
 
