@@ -38,9 +38,9 @@ const LotteryResultCard: React.FC<LotteryResultCardProps> = ({ name, winPrice, t
           <p className="m-4 font-bold">Please contact</p>
 
           <div className="flex justify-between items-center w-full px-4 m-4 font-semibold ">
-            <p>📞 Helpline: 7894561230 </p>
+            <p>📞 Helpline/Whatsapp: 84205 76740 </p>
 
-            <p>Whatsapp: 7894561230 </p>
+            
           </div>
         </div>
       </div>
