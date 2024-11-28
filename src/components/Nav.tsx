@@ -32,7 +32,7 @@ const Nav: React.FC<NavProps> = () => {
                 </ul>
             </div>
             <div className='mt-4 sm:mt-0'>
-                <p>📞 +91 7894561230</p>
+                <p>📞 +91 84205 76740</p>
             </div>
         </nav>
     );
