@@ -98,7 +98,8 @@ export default function Home() {
 
   return (
     <>
-      {status ? (<Login />) : (<NotStarted/>)}
+{/*       {status ? (<Login />) : (<NotStarted/>)} */}
+          <h1 className="text-red-500 "> Please contact the developer!</h1>
     </>
   );
 }
